@@ -7,6 +7,7 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import RootLayout from "./layouts/RootLayout";
+import Checkout from "./pages/Checkout";
 import Earphones from "./pages/EarPhones";
 import HeadPhones from "./pages/HeadPhones";
 import HomePage from "./pages/Homepage";
@@ -20,6 +21,7 @@ const router = createBrowserRouter(
       <Route path="headphones" element={<HeadPhones />} />
       <Route path="speakers" element={<Speakers />} />
       <Route path="earphones" element={<Earphones />} />
+      <Route path="checkout" element={<Checkout />} />
     </Route>
   )
 );

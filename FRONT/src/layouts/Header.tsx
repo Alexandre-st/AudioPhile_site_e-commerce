@@ -11,7 +11,9 @@ const Header: React.FC = () => {
     <header className="header">
       <div className="header-container container">
         <Menu toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} />
-        <img src={audiophile} alt="Audiophile logo" />
+        <Link to="/">
+          <img src={audiophile} alt="Audiophile logo" />
+        </Link>
         <nav className="header-nav">
           <ul className="header-nav-list">
             <li>

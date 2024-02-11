@@ -7,7 +7,7 @@ import zx9SpeakerTablet from "../assets/home/tablet/image-speaker-zx9.png";
 import GearLocation from "../components/GearLocation";
 import ProductButton from "../components/ProductButton";
 import ShopLinks from "../components/ShopLinks";
-import { MotionMain } from "../libs/framer";
+import { MotionDiv, MotionMain } from "../libs/framer";
 
 const HomePage: React.FC = () => {
   return (
@@ -31,7 +31,11 @@ const HomePage: React.FC = () => {
         <ShopLinks />
       </section>
       <section className="homeProducts container">
-        <div className="homeProducts-zx9">
+        <MotionDiv
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          className="homeProducts-zx9"
+        >
           <picture className="homeProducts-zx9-img">
             <source srcSet={zx9SpeakerDesktop} media="(min-width: 1024px)" />
             <source srcSet={zx9SpeakerTablet} media="(min-width: 768px)" />
@@ -45,14 +49,22 @@ const HomePage: React.FC = () => {
             </p>
             <ProductButton name="See Product" classname="btn btn-black" />
           </div>
-        </div>
-        <div className="homeProducts-zx7">
+        </MotionDiv>
+        <MotionDiv
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          className="homeProducts-zx7"
+        >
           <h3 className="homeProducts-title homeProducts-title-space">
             ZX7 SPEAKER
           </h3>
           <ProductButton name="See Product" classname="btn btn-transparent" />
-        </div>
-        <div className="homeProducts-yx1">
+        </MotionDiv>
+        <MotionDiv
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          className="homeProducts-yx1"
+        >
           <picture className="homeProducts-yx1-img">
             <source srcSet={yx1earphonesDesktop} media="(min-width: 1024px)" />
             <source srcSet={yx1earphonesTablet} media="(min-width: 768px)" />
@@ -64,7 +76,7 @@ const HomePage: React.FC = () => {
             </h3>
             <ProductButton name="See Product" classname="btn btn-transparent" />
           </div>
-        </div>
+        </MotionDiv>
       </section>
       <GearLocation />
     </MotionMain>

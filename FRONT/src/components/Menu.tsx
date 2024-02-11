@@ -1,3 +1,4 @@
+import hamburgerMenu from "../assets/shared/tablet/icon-hamburger.svg";
 import ShopLinks from "./ShopLinks";
 
 type SetToggleMenuFunction = (
@@ -22,7 +23,7 @@ const Menu = (props: Props) => {
       aria-label="To open or close the menu"
       onClick={toggleTheMenu}
     >
-      <img className="header-menu-logo" src="{hamburgerMenu}" alt="Menu" />
+      <img className="header-menu-logo" src={hamburgerMenu} alt="Menu" />
       {toggleMenu && (
         <div className="header-menu-bg">
           <div className="header-menu-bg-white">
