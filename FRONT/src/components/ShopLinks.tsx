@@ -43,7 +43,7 @@ const ShopLinks = () => {
         />
         <div className="shopLink-content-text">
           <h3 className="shopLink-content-title">EARPHONES</h3>
-          <div className="shopLink-content-text-link" to="/earphones">
+          <div className="shopLink-content-text-link">
             <p>Shop</p>
             <img src={arrowLink} alt="Arrow to the shop" />
           </div>
