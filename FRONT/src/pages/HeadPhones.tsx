@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import dbxx59 from "../assets/products/product-xx59-headphones/desktop/image-category-page-preview.jpg";
 import mbxx59 from "../assets/products/product-xx59-headphones/mobile/image-category-page-preview.jpg";
 import tbxx59 from "../assets/products/product-xx59-headphones/tablet/image-category-page-preview.jpg";
@@ -27,7 +28,9 @@ const HeadPhones = () => {
             </picture>
             <div className="category-article-content">
               <h4 className="new-product">NEW PRODUCT</h4>
-              <h2 className="mid-title">XX99 MARK II HEADPHONES</h2>
+              <Link to="/headphones/xx99">
+                <h2 className="mid-title">XX99 MARK II HEADPHONES</h2>
+              </Link>
               <p className="text">
                 Experience natural, lifelike audio and exceptional build quality
                 made for the passionate music enthusiast.

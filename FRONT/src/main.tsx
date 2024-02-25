@@ -11,6 +11,7 @@ import Checkout from "./pages/Checkout";
 import Earphones from "./pages/EarPhones";
 import HeadPhones from "./pages/HeadPhones";
 import HomePage from "./pages/Homepage";
+import DetailProduct from "./pages/ProductDetail";
 import Speakers from "./pages/Speakers";
 import "./styles/index.scss";
 
@@ -19,6 +20,8 @@ const router = createBrowserRouter(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<HomePage />} />
       <Route path="headphones" element={<HeadPhones />} />
+      // A dynamiser
+      <Route path="headphones/:xx99" element={<DetailProduct />} />
       <Route path="speakers" element={<Speakers />} />
       <Route path="earphones" element={<Earphones />} />
       <Route path="checkout" element={<Checkout />} />
