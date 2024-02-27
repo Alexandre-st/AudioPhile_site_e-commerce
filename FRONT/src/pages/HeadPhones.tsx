@@ -28,14 +28,16 @@ const HeadPhones = () => {
             </picture>
             <div className="category-article-content">
               <h4 className="new-product">NEW PRODUCT</h4>
-              <Link to="/headphones/xx99">
+              <Link to="xx99">
                 <h2 className="mid-title">XX99 MARK II HEADPHONES</h2>
               </Link>
               <p className="text">
                 Experience natural, lifelike audio and exceptional build quality
                 made for the passionate music enthusiast.
               </p>
-              <button className="btn btn-orange">SEE PRODUCT</button>
+              <Link to="xx99" className="btn btn-orange">
+                SEE PRODUCT
+              </Link>
             </div>
           </div>
           <div className="category-article category-article-reverse">

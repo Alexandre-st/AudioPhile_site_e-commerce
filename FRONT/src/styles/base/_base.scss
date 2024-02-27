@@ -53,6 +53,7 @@
   font-size: 2.8rem;
   font-weight: 700;
   letter-spacing: 1px;
+  color: #000;
 
   @include mq(tablet) {
     font-size: 4rem;
@@ -74,9 +75,11 @@
 }
 
 .text {
-  font-weight: 500;
   font-size: 1.5rem;
   line-height: 2.5rem;
+  font-weight: 400;
+  opacity: 0.5;
+  letter-spacing: 0;
 }
 
 .btn {
@@ -88,6 +91,7 @@
   width: 16rem;
   height: 4.8rem;
   text-align: center;
+  padding: 1.5rem 0;
 
   &-orange {
     background-color: #d87d4a;
@@ -110,5 +114,16 @@
 
   &-transparent {
     border: 1px solid #000000;
+  }
+}
+
+.new-product {
+  color: #d87d4a;
+  font-size: 1.4rem;
+  letter-spacing: 1rem;
+  margin-bottom: 2.4rem;
+
+  @include mq(tablet) {
+    margin-bottom: 1.6rem;
   }
 }
