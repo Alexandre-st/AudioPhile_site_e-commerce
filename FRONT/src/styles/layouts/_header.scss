@@ -10,18 +10,23 @@
     justify-content: space-between;
     align-items: center;
 
-    @include mq(tablet) {
-      justify-content: flex-start;
-    }
-
     @include mq(laptop) {
       padding: 3.2rem 0 3.7rem 0;
     }
   }
 
-  &-cart {
-    @include mq(tablet) {
-      margin-left: auto;
+  &-link {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  &-login {
+    filter: invert(1);
+
+    img {
+      width: 2.5rem;
+      height: 2.5rem;
     }
   }
 
@@ -30,11 +35,7 @@
 
     @include mq(laptop) {
       display: block;
-      margin-left: 15rem;
-
-      @include mq(desktop) {
-        margin-left: 19.7rem;
-      }
+      margin-left: -10rem;
 
       &-list {
         display: flex;
